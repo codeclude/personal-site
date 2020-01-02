@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/netlify-labs/functions-and-graphql/issues"
   },
-  "homepage": "https://github.com/netlify-labs/functions-and-graphql#readme"
+  "homepage": "https://github.com/netlify-labs/functions-and-graphql#readme",
+  "devDependencies": {
+    "graphiql-material-theme": "^1.0.3"
+  }
 }
