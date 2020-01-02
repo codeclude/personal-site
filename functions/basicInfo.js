@@ -1,5 +1,3 @@
-const distanceInWordsToNow = require('date-fns/distance_in_words_to_now')
-
 module.exports = {
   name: 'Mateusz Korczyński',
   company: 'Deviniti',

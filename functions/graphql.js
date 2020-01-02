@@ -1,9 +1,21 @@
-import data from './info';
+const data = require('./info');
 const { ApolloServer, gql } = require('apollo-server-lambda')
 
 const typeDefs = gql`
+  type BasicInfo {
+    name: String
+    age: String
+    email: String
+    company: String
+  }
+
   type Query {
-    hello: String
+    name: String
+    age: String
+    email: String
+    company: String
+    twitter: String
+    github: String
   }
 `
 

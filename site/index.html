@@ -10,7 +10,7 @@
   <link href="//cdn.jsdelivr.net/npm/graphiql@0.11.11/graphiql.css" rel="stylesheet" />
   <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono);</style>
   <link href="./style.css" rel="stylesheet" />
-  <style type="text/css">#root,body,html{padding:0;margin:0;height:100%}.variable-editor{display:none !important;}</style>
+  <style type="text/css">#root,body,html{padding:0;margin:0;height:100%}.variable-editor{display:none !important;}.title{display: none;}</style>
 </head>
 <body>
   <div id="splash">
@@ -103,6 +103,7 @@
           fetcher: graphQLFetcher,
           query: defaultQuery,
           editorTheme: 'material',
+          logo: 'none',
           variables: parameters.variables,
           operationName: parameters.operationName,
           onEditQuery: onEditQuery,
