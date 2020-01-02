@@ -10,7 +10,7 @@
   <link href="//cdn.jsdelivr.net/npm/graphiql@0.11.11/graphiql.css" rel="stylesheet" />
   <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono);</style>
   <link href="./style.css" rel="stylesheet" />
-  <style type="text/css">#root,body,html{padding:0;margin:0;height:100%}.variable-editor{display:none}</style>
+  <style type="text/css">#root,body,html{padding:0;margin:0;height:100%}.variable-editor{display:none !important;}</style>
 </head>
 <body>
   <div id="splash">
@@ -75,11 +75,34 @@
         }).then(response => response.json());
       }
 
+      const defaultQuery = `
+        # Welcome on board my honorable Guest!
+        #
+        # I am Mateusz, 
+        # ${new Date().getUTCFullYear()-1994} years old Developer from Wroclaw, Poland
+        # Here is my resume written in GraphQL.
+        # Below are portfolio categories.
+        # 
+        # Feel free to erase some 
+        # then click ▶ button from the top.
+        #
+        # Don't worry refresh button works fine :)
+        {
+          name,
+          age,
+          email,
+          company,
+          twitter,
+          github
+        }
+      `
+
       // Render <GraphiQL /> into the body.
       ReactDOM.render(
         React.createElement(GraphiQL, {
           fetcher: graphQLFetcher,
-          query: parameters.query,
+          query: defaultQuery,
+          editorTheme: 'material',
           variables: parameters.variables,
           operationName: parameters.operationName,
           onEditQuery: onEditQuery,

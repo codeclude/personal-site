@@ -2,9 +2,9 @@
   background-color: #263238;
   color: #e9eded;
 }
-.cm-s-material .CodeMirror-gutters {
-  background: #263238;
-  color: #537f7e;
+.CodeMirror-gutters, .cm-s-material .CodeMirror-gutters {
+  background: #263238 !important;
+  color: #537f7e !important;
   border: none;
 }
 .cm-s-material .CodeMirror-guttermarker,
@@ -75,8 +75,8 @@
 .cm-s-material .cm-attribute {
   color: #ffcb6b;
 }
-.cm-s-material .cm-property {
-  color: #80cbae;
+.cm-property, .cm-s-material .cm-property {
+  color: #80cbae !important;
 }
 .cm-s-material .cm-qualifier,
 .cm-s-material .cm-variable-3 {

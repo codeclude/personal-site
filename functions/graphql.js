@@ -1,3 +1,4 @@
+import data from './info';
 const { ApolloServer, gql } = require('apollo-server-lambda')
 
 const typeDefs = gql`
@@ -8,9 +9,12 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    hello: (root, args, context) => {
-      return `Hello from Netlify function. https://bit.ly/2UXh0fD`
-    }
+    name: () => data.name,
+    age: () => data.age,
+    email: () => data.email,
+    company: () => data.company,
+    twitter: () => data.twitter,
+    github: () => data.github
   }
 }
 
