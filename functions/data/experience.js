@@ -1,4 +1,4 @@
-const distanceInWords = require('date-fns/distance_in_words')
+import distanceInWords from "date-fns/distance_in_words"
 
 module.exports = [
     {
