@@ -1,10 +1,10 @@
 const data = require('./data');
 const { ApolloServer, gql } = require('apollo-server-lambda')
 // Schemas
-import {
+const {
   Job,
   Query
-} from './types'
+} = require('./types')
 
 
 const typeDefs = Query.concat(
