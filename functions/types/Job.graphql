@@ -1,0 +1,7 @@
+type Job {
+  company: String
+  title: String!
+  started: String
+  finished: String
+  seniority: String
+}
