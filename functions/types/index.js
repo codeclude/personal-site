@@ -1,5 +1,5 @@
-import Job from './Job.graphql'
-import Query from './Query.graphql'
+const { Job } = require('./Job.graphql');
+const { Query } = require('./Query.graphql');
 
 export {
     Job,

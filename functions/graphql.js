@@ -6,7 +6,7 @@ const { Job, Query } = require('./types')
 
 const typeDefs = Query.concat(
     Job
-)
+);
 
 const resolvers = {
   Query: {
@@ -23,6 +23,6 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers
-})
+});
 
 exports.handler = server.createHandler()
