@@ -1,7 +1,8 @@
 const data = require('./data');
 const { ApolloServer, gql } = require('apollo-server-lambda')
 // Schemas
-const { Job, Query } = require('./types')
+const Job = require('./Job.graphql');
+const Query = require('./Query.graphql');
 
 
 const typeDefs = Query.concat(

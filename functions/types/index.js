@@ -1,5 +1,5 @@
-const { Job } = require('./Job.graphql');
-const { Query } = require('./Query.graphql');
+const Job = require('./Job.graphql');
+const Query = require('./Query.graphql');
 
 module.exports = {
     Job,
