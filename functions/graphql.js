@@ -1,10 +1,7 @@
 const data = require('./data');
 const { ApolloServer, gql } = require('apollo-server-lambda')
 // Schemas
-const {
-  Job,
-  Query
-} = require('./types')
+const { Job, Query } = require('./types')
 
 
 const typeDefs = Query.concat(
@@ -19,7 +16,7 @@ const resolvers = {
     company: () => data.company,
     twitter: () => data.twitter,
     github: () => data.github,
-    jobs: () => data.experience
+    experience: () => data.experience
   }
 }
 

@@ -5,5 +5,5 @@ type Query {
   age: String!
   twitter: String!
   github: String!
-  jobs: [Job]
+  experience: [Job]
 }
