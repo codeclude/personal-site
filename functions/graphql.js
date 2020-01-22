@@ -5,9 +5,10 @@ const Job = require('./Job.graphql');
 const Query = require('./Query.graphql');
 
 
-const typeDefs = Query.concat(
-    Job
-);
+const typeDefs = gql`
+  ${Query}
+  ${Job}
+`;
 
 const resolvers = {
   Query: {
@@ -26,4 +27,4 @@ const server = new ApolloServer({
   resolvers
 });
 
-exports.handler = server.createHandler()
+exports.handler = server.createHandler();
