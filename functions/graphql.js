@@ -46,7 +46,7 @@ const resolvers = {
     company: () => data.company,
     twitter: () => data.twitter,
     github: () => data.github,
-    experience: () => jobs
+    experience: () => data.experience
   }
 }
 
