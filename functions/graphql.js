@@ -1,9 +1,30 @@
-const data = require('./data');
 const { ApolloServer, gql } = require('apollo-server-lambda')
 // Schemas
-const Job = require('./Job.graphql');
-const Query = require('./Query.graphql');
+const jobs = [
+  {
+    company: "Capgemini",
+    title: "Software Engineer",
+    started: "2016",
+    finished: "2019",
+    seniority: ""
+  },
+  {
+    company: "Capgemini",
+    title: "Software Engineer",
+    started: "2016",
+    finished: "2019",
+    seniority: ""
+  }
+];
 
+const data = {
+    name: 'Mateusz Korczyński',
+    company: 'Deviniti',
+    email: 'korczynskimm@gmail.com',
+    age: `${new Date().getUTCFullYear()-1994}`,
+    twitter: 'https://twitter.com/korczynsk1',
+    github: 'https://github.com/korczynsk1/'
+};
 
 const typeDefs = gql`
   type Query {
@@ -33,7 +54,7 @@ const resolvers = {
     company: () => data.company,
     twitter: () => data.twitter,
     github: () => data.github,
-    experience: () => data.experience
+    experience: () => jobs
   }
 }
 
