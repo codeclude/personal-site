@@ -1,3 +1,4 @@
+const data = require('./data');
 const { ApolloServer, gql } = require('apollo-server-lambda')
 // Schemas
 const jobs = [
@@ -16,15 +17,6 @@ const jobs = [
     seniority: ""
   }
 ];
-
-const data = {
-    name: 'Mateusz Korczyński',
-    company: 'Deviniti',
-    email: 'korczynskimm@gmail.com',
-    age: `${new Date().getUTCFullYear()-1994}`,
-    twitter: 'https://twitter.com/korczynsk1',
-    github: 'https://github.com/korczynsk1/'
-};
 
 const typeDefs = gql`
   type Query {
