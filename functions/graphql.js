@@ -6,8 +6,23 @@ const Query = require('./Query.graphql');
 
 
 const typeDefs = gql`
-  ${Query}
-  ${Job}
+  type Query {
+    name: String!
+    age: String!
+    email: String!
+    company: String!
+    twitter: String!
+    github: String!
+    experience: [Job]
+  }
+
+  type Job {
+    company: String
+    title: String!
+    started: String
+    finished: String
+    seniority: String
+  }
 `;
 
 const resolvers = {
