@@ -1,22 +1,6 @@
 const data = require('./data');
-const { ApolloServer, gql } = require('apollo-server-lambda')
+const { ApolloServer, gql } = require('apollo-server-lambda');
 // Schemas
-const jobs = [
-  {
-    company: "Capgemini",
-    title: "Software Engineer",
-    started: "2016",
-    finished: "2019",
-    seniority: ""
-  },
-  {
-    company: "Capgemini",
-    title: "Software Engineer",
-    started: "2016",
-    finished: "2019",
-    seniority: ""
-  }
-];
 
 const typeDefs = gql`
   type Query {
