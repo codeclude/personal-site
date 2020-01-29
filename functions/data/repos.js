@@ -15,4 +15,4 @@ const repos = axios(
     .then(repos => repos.filter(r => !r.fork && r.owner.login === 'korczynsk1'))
     // .then(repos => repos.sort((a, b) => b.stars - a.stars))
 
-module.exports = [...repos];
+module.exports = repos;
