@@ -11,6 +11,8 @@ const typeDefs = gql`
     twitter: String!
     github: String!
     experience: [Job]
+    repos: [Repo]
+    projects: [Project]
   }
 
   type Job {
@@ -20,6 +22,22 @@ const typeDefs = gql`
     finished: String
     seniority: String
   }
+  
+  type Repo {
+    name: String
+    url: String
+    description: String
+    language: String
+    owner: String
+  }
+  
+  type Project {
+    name: String
+    description: String
+    github: String
+    website: String
+  }
+  
 `;
 
 const resolvers = {
@@ -30,7 +48,9 @@ const resolvers = {
     company: () => data.company,
     twitter: () => data.twitter,
     github: () => data.github,
-    experience: () => data.experience
+    experience: () => data.experience,
+    repos: () => data.repos,
+    projects: () => data.projects
   }
 }
 
