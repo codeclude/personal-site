@@ -117,7 +117,7 @@
       function waitForElementToDisplay(selector, time) {
         let querySelector = document.querySelector(selector);
         if(querySelector!=null) {
-          alert("The element is displayed, you can put your code instead of this alert.")
+          querySelector.click();
           return;
         }
         else {
