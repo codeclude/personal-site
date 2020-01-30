@@ -78,12 +78,12 @@
       const defaultQuery = `
         # Welcome on board my honorable Guest!
         #
-        # I am Mateusz, 
+        # I am Mateusz,
         # ${new Date().getUTCFullYear()-1994} years old Developer from Wroclaw, Poland
         # Here is my resume written in GraphQL.
         # Below are portfolio categories.
-        # 
-        # Feel free to erase some 
+        #
+        # Feel free to erase some
         # then click ▶ button from the top.
         #
         # Don't worry refresh button works fine :)
@@ -113,6 +113,20 @@
         }),
         document.body,
       )
+
+      function waitForElementToDisplay(selector, time) {
+        let querySelector = document.querySelector(selector);
+        if(querySelector!=null) {
+          alert("The element is displayed, you can put your code instead of this alert.")
+          return;
+        }
+        else {
+          setTimeout(function() {
+            waitForElementToDisplay(selector, time);
+          }, time);
+        }
+      }
+      waitForElementToDisplay('execute-button',500);
   </script>
 </body>
 </html>
