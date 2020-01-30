@@ -1,4 +1,4 @@
-const {distanceInWords} = require("date-fns");
+const {formatDistance} = require("date-fns");
 
 module.exports = [
     {
@@ -7,7 +7,7 @@ module.exports = [
       started: "09.2019",
       finished: "",
       technologyStack: "React, Java Spring",
-      seniority: distanceInWords(new Date(2019, 9, 1), new Date()),
+      seniority: formatDistance(new Date(2019, 9, 1), new Date()),
     },
     {
       company: "Capgemini",
@@ -15,6 +15,6 @@ module.exports = [
       started: "06.2016",
       finished: "09.2019",
       technologyStack: "Java Spring, Angular",
-      seniority: distanceInWords(new Date(2016, 6, 1), new Date(2019,9, 31)),
+      seniority: formatDistance(new Date(2016, 6, 1), new Date(2019,9, 31)),
     }
 ];
