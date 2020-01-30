@@ -12,7 +12,7 @@ const repos = axios(
             owner: repo.owner.login
         }))
     )
-    .then(repos => repos.filter(r => !r.fork && r.owner.login === 'korczynsk1'))
+    // .then(repos => repos.filter(r => !r.fork && r.owner.login === 'korczynsk1'))
     // .then(repos => repos.sort((a, b) => b.stars - a.stars))
 
 module.exports = repos;

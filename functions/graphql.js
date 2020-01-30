@@ -20,6 +20,7 @@ const typeDefs = gql`
     title: String!
     started: String
     finished: String
+    technologyStack: String
     seniority: String
   }
   
