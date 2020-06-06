@@ -4,7 +4,7 @@
   "author": "Netlify",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-lambda": "^2.4.8",
+    "apollo-server-lambda": "^2.14.2",
     "date-fns": "^2.9.0",
     "graphql": "^14.1.1",
     "axios": "^0.19.2"
