@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 const repos = axios(
-    'https://api.github.com/users/korczynsk1/repos?type=all&per_page=100'
+    'https://api.github.com/users/codeclude/repos?type=all&per_page=100'
 )
     .then(repos =>
         repos.data.map(repo => ({
