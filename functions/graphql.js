@@ -45,7 +45,6 @@ const resolvers = {
     name: () => data.name,
     age: () => data.age,
     email: () => data.email,
-    company: () => data.company,
     twitter: () => data.twitter,
     github: () => data.github,
     experience: () => data.experience,
