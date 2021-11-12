@@ -1,8 +1,7 @@
 module.exports = {
   name: 'Mateusz Korczyński',
-  company: 'Deviniti',
-  email: 'korczynskimm@gmail.com',
+  email: 'thecodeclude@gmail.com',
   age: `${new Date().getUTCFullYear()-1994}`,
-  twitter: 'https://twitter.com/korczynsk1',
-  github: 'https://github.com/korczynsk1/'
+  twitter: 'https://twitter.com/codeclude',
+  github: 'https://github.com/codeclude/'
 };
