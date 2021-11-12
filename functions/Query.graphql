@@ -1,6 +1,5 @@
 type Query {
   name: String!
-  company: String
   email: String!
   age: String!
   twitter: String!
