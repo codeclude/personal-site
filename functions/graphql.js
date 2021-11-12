@@ -7,7 +7,6 @@ const typeDefs = gql`
     name: String!
     age: String!
     email: String!
-    company: String!
     twitter: String!
     github: String!
     experience: [Job]
